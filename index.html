@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body class="bg-black mx-2">
-    <div class="flex gap-3 w-full">
+    <div class="flex gap-2 w-full">
       <aside class="max-w-[300px]">
         <nav
           class="flex flex-col gap-4 bg-mybg rounded-xl px-6 py-3 text-primary font-montserrat my-2"
@@ -115,10 +115,98 @@
           </button>
         </div>
       </aside>
-      <main class="w-2/3">
-        <div class="title text-white">
-          <h2>Playlist Spotify</h2>
-          <p><a href="">Tampilkan Semua</a></p>
+      <main
+        class="w-full overflow-y-hidden hover:overflow-y-auto transition overscroll-auto hover:scrollbar scrollbar-track-transparent scrollbar-thumb-slate-800 h-[565px] rounded-xl mt-2"
+      >
+        <nav
+          class="sticky top-0 w-auto h-16 bg-zinc-900 p-3 flex justify-between items-center"
+        >
+          <div id="direction" class="text-xl flex gap-2">
+            <button
+              class="bg-neutral-950 rounded-full w-9 h-9 text-white cursor-not-allowed flex justify-center items-center"
+            >
+              <span class="material-symbols-outlined"> arrow_back_ios </span>
+            </button>
+            <button
+              class="bg-neutral-950 rounded-full w-9 h-9 text-white cursor-not-allowed flex justify-center items-center"
+            >
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </button>
+          </div>
+          <div id="nav">
+            <ul
+              class="flex gap-4 text-primary p-4 font-bold justify-around items-center"
+            >
+              <li class="hidden md:inline tracking-widest">Premium</li>
+              <li class="hidden md:inline tracking-widest">Dukungan</li>
+              <li class="hidden md:inline tracking-widest">Download</li>
+              <span class="text-white hidden md:inline">|</span>
+              <li>Daftar</li>
+              <li class="bg-white text-black rounded-full text-base px-7 py-3">
+                Masuk
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- content-1 -->
+        <div
+          class="content-1 bg-gradient-to-br from-neutral-800 via-mybg to-mybg pt-1 px-4 flex flex-col justify-center items-center text-white pb-3"
+        >
+          <div
+            id="content-1-title"
+            class="w-full flex justify-between items-center mb-4"
+          >
+            <h2 class="text-xl font-bold font-sans">
+              <a href="" class="cursor-pointer hover:underline"
+                >Playlist Spotify</a
+              >
+            </h2>
+            <p class="text-sm text-primary font-bold">
+              <a href="">Tampilkan Semua</a>
+            </p>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui
+            molestias mollitia. Eligendi, natus neque voluptatem laboriosam sit
+            iusto laudantium, ut cumque reiciendis inventore quisquam. Iure
+            delectus aliquam, officiis animi harum debitis velit maiores
+            repudiandae adipisci, temporibus amet sunt quibusdam perspiciatis
+            accusamus quidem impedit atque id Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Obcaecati porro cupiditate quia,
+            molestiae assumenda asperiores! Sit distinctio ex tempora provident.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Illum, deserunt. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet.
+          </p>
+        </div>
+
+        <!-- content 2 -->
+        <div
+          class="content-2 bg-mybg pt-1 px-4 flex flex-col justify-center items-center text-white pb-3"
+        >
+          <div
+            id="content-2-title"
+            class="w-full flex justify-between items-center mb-4"
+          >
+            <h2 class="text-xl font-bold font-sans">Fokus</h2>
+            <p class="text-sm font-bold"><a href="">Tampilkan Semua</a></p>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui
+            molestias mollitia. Eligendi, natus neque voluptatem laboriosam sit
+            iusto laudantium, ut cumque reiciendis inventore quisquam. Iure
+            delectus aliquam, officiis animi harum debitis velit maiores
+            repudiandae adipisci, temporibus amet sunt quibusdam perspiciatis
+            accusamus quidem impedit atque id Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Obcaecati porro cupiditate quia,
+            molestiae assumenda asperiores! Sit distinctio ex tempora provident.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Illum, deserunt. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet.
+          </p>
         </div>
       </main>
     </div>
